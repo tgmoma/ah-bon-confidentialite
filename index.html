@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 </head>
 <body><main>
 <h1>Politique de confidentialité de « Ah bon ? »</h1>
-<p class="date">Dernière mise à jour : 11 octobre 2026</p>
+<p class="date">Dernière mise à jour : 18 octobre 2026 (version 6.0.2 de l'application)</p>
 <h2>1. Qui est responsable de l'application ?</h2>
 <p>« Ah bon ? » est une application Android éditée par Lafai.</p>
 <p>Contact : <a href="mailto:lafaimoma@gmail.com">lafaimoma@gmail.com</a></p>
@@ -36,22 +36,24 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <ul>
 <li>le prénom ou pseudo que tu as choisi ;</li>
 <li><strong>si tu choisis d'en définir un</strong> (le mot de passe est facultatif), une empreinte de ton mot de passe, calculée sur ton téléphone avec un algorithme de protection appelé PBKDF2. Ton mot de passe lui-même n'est jamais enregistré, et il ne sert qu'à verrouiller l'accès à l'application sur ton téléphone. Sans mot de passe, l'application s'ouvre directement ;</li>
-<li>ta progression : les fiches apprises, les dates de révision, ta série de jours, tes favoris ;</li>
-<li>tes réglages : heure du rappel, nombre de nouveautés par jour, thème de l'application, importance des catégories.</li>
+<li>si tu en définis une, une question secrète et l'empreinte de sa réponse (calculée de la même façon), pour pouvoir choisir un nouveau code si tu l'oublies ;</li>
+<li>ta progression : les fiches apprises, les dates de révision, ta série de jours, tes favoris, tes notes personnelles, tes listes de lecture, tes résultats d'entraînement, tes scores et ta progression dans les jeux ;</li>
+<li>tes réglages : heure et type de rappels, nombre de nouveautés par jour, thème, animations, importance des catégories ;</li>
+<li>un petit journal des erreurs techniques de l'application (pour pouvoir les corriger), qui reste sur ton téléphone et n'est envoyé que si tu choisis toi-même de le transmettre par e-mail (voir la partie 5).</li>
 </ul>
 <p>Ces données restent sur ton appareil. <strong>Elles ne sont envoyées à aucun serveur.</strong></p>
 <h2>4. Les autorisations demandées par l'application</h2>
 <ul>
-<li><strong>Notifications</strong> : pour t'envoyer le rappel quotidien « Le savais-tu ? » à l'heure que tu choisis. Ces notifications sont programmées par ton téléphone, sans serveur. Tu peux les couper dans les réglages Android.</li>
+<li><strong>Notifications</strong> : pour t'envoyer le rappel quotidien « Le savais-tu ? » à l'heure que tu choisis, et, si l'option « Rappels insistants » est activée, quelques rappels de plus dans la journée tant qu'aucune fiche n'a été faite. Ces notifications sont programmées par ton téléphone lui-même, sans serveur. Tu peux les régler dans l'application ou les couper dans les réglages Android.</li>
+<li><strong>Icône qui change d'humeur</strong> : l'icône de l'application peut changer d'expression selon l'heure si tu n'as pas encore appris aujourd'hui. Ce changement est fait par le téléphone, sans aucun échange de données, et se désactive dans les Réglages.</li>
 <li><strong>Démarrage de l'appareil</strong> et <strong>maintien en éveil</strong> : pour que les rappels programmés continuent de fonctionner après un redémarrage du téléphone.</li>
 <li><strong>Verrouillage de l'écran (empreinte, visage, code ou schéma)</strong> : si tu choisis, dans les Réglages, de déverrouiller l'application avec le verrouillage de ton téléphone, l'application demande à Android de confirmer que c'est bien toi. <strong>Android répond seulement « réussi » ou « échec »</strong> : l'application ne reçoit, ne lit et n'enregistre aucune empreinte, aucun visage et aucun code.</li>
 <li><strong>Accès à Internet</strong> : cette autorisation fait partie du modèle de l'application, mais <strong>cette version ne s'en sert pas</strong> pour envoyer ou recevoir des données.</li>
 </ul>
-<h2>5. Sauvegarde, export, import, partage et signalement</h2>
-<p>Dans les Réglages, tu peux <strong>exporter une sauvegarde</strong> de tes données sous forme de fichier. Ce fichier est créé uniquement quand tu le demandes. Tu choisis toi-même où l'envoyer ou l'enregistrer, à l'aide du menu de partage d'Android. Je n'y ai pas accès.</p>
-<p>Tu peux aussi <strong>importer</strong> une sauvegarde ou un paquet de fiches au format .json depuis un fichier de ton téléphone.</p>
-<p>Le bouton <strong>« Partager »</strong>, sur une fiche, ouvre le menu de partage d'Android avec un court texte (le titre et l'accroche de la fiche) : tu choisis toi-même l'application et le destinataire.</p>
-<p>Le lien <strong>« Signaler une erreur dans cette fiche »</strong> ouvre ton application de messagerie avec un message pré-rempli (le titre de la fiche). Il n'est envoyé que si tu l'envoies toi-même ; je reçois alors ton message et ton adresse e-mail, comme pour tout courriel. De même, le lien « Politique de confidentialité » des Réglages ouvre cette page dans le navigateur de ton téléphone.</p>
+<h2>5. Sauvegarde automatique, partage et signalement</h2>
+<p><strong>Sauvegarde automatique sur ton téléphone.</strong> Pour que tu ne perdes jamais ta progression, l'application en garde une copie <strong>chiffrée</strong> dans un dossier qui lui est réservé sur ton téléphone (Android/media/com.moko.ahbon). Cette copie reste <strong>sur ton appareil uniquement</strong> et n'est envoyée nulle part. Elle n'est pas supprimée quand on désinstalle l'application : c'est ce qui permet de retrouver son compte après une réinstallation. Tu peux la supprimer toi-même avec le gestionnaire de fichiers de ton téléphone. L'application garde aussi, en interne, une copie de secours de la veille, pour réparer une sauvegarde abîmée.</p>
+<p><strong>Partager.</strong> Les boutons « Partager » (une fiche, ta série, ton mois, un score, un défi à un ami) créent une image et un court texte avec le lien de l'application sur Google Play, puis ouvrent le menu de partage d'Android : tu choisis toi-même l'application et le destinataire. Rien n'est envoyé si tu ne le fais pas.</p>
+<p><strong>Signaler.</strong> Le lien « Signaler une erreur dans cette fiche » et le bouton « Signaler le problème » (affiché si l'application rencontre une erreur) ouvrent ton application de messagerie avec un message pré-rempli : le titre de la fiche, ou la liste des dernières erreurs techniques. Il n'est envoyé que si tu l'envoies toi-même ; je reçois alors ton message et ton adresse e-mail, comme pour tout courriel. De même, le lien « Politique de confidentialité » des Réglages ouvre cette page dans le navigateur de ton téléphone.</p>
 <p>Selon les réglages de ton téléphone, Android peut aussi sauvegarder automatiquement les données de certaines applications dans ton compte Google (sauvegarde Android). Cette sauvegarde est gérée par Google et par ton téléphone, pas par l'application. Tu peux la désactiver dans les réglages Android.</p>
 <h2>6. Partage avec des tiers</h2>
 <p>Je ne partage aucune donnée avec des tiers, puisque je n'en collecte aucune. Cette version ne contient aucun service publicitaire, d'analyse, de statistiques ou de suivi.</p>
@@ -60,16 +62,15 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <h2>8. Sécurité et suppression des données</h2>
 <p>Tes données sont conservées dans l'espace privé de l'application sur ton téléphone. Pour les supprimer :</p>
 <ul>
-<li>dans l'application : <strong>Réglages, puis « Effacer toutes mes données »</strong> ;</li>
-<li>ou <strong>désinstalle l'application</strong> : toutes ses données locales sont alors supprimées.</li>
+<li>dans l'application : <strong>Réglages, puis « Supprimer mon compte »</strong> ;</li>
+<li>ou <strong>désinstalle l'application</strong> : ses données internes sont alors supprimées. La copie de sauvegarde automatique (partie 5) reste dans le dossier Android/media/com.moko.ahbon : supprime ce dossier avec le gestionnaire de fichiers si tu veux tout effacer.</li>
 </ul>
-<p>Pense à exporter une sauvegarde avant, si tu veux conserver ta progression.</p>
 <h2>9. Tes droits</h2>
 <p>Comme je ne collecte aucune donnée personnelle, il n'y a rien à consulter, corriger ou supprimer de mon côté. Pour toute question sur cette politique, écris-moi à l'adresse de contact ci-dessus.</p>
 <h2>10. Modifications</h2>
 <p>Si cette politique change (par exemple si l'application utilise un jour de la publicité ou des statistiques), la nouvelle version sera publiée à cette adresse, avec une nouvelle date de mise à jour, avant que la mise à jour de l'application soit mise en ligne.</p>
 <hr>
 <h2>English summary</h2>
-<p>« Ah bon ? » is an offline learning app. It does not collect, store on a server, or share any personal data. Your first name or nickname, an optional hashed password, your progress and settings stay on your phone only. The share and report-an-error buttons only open your phone's share sheet or e-mail app, and nothing is sent unless you send it. The app contains no ads and no analytics in this version. Reminders are local notifications scheduled by your phone. You can export or delete your data at any time (Settings, "Effacer toutes mes données") or by uninstalling the app. The app is intended for users aged 13 and over. Contact: <a href="mailto:lafaimoma@gmail.com">lafaimoma@gmail.com</a>.</p>
+<p>« Ah bon ? » is an offline learning app. It does not collect, store on a server, or share any personal data. Your first name or nickname, an optional hashed code or password and secret answer, your progress, notes and settings stay on your phone only. An encrypted automatic backup is kept in the app's own folder on your phone (Android/media/com.moko.ahbon) so you can recover your account after reinstalling; it is never uploaded. The share, report-an-error and report-a-problem buttons only open your phone's share sheet or e-mail app, and nothing is sent unless you send it. The app contains no ads and no analytics in this version. Reminders are local notifications scheduled by your phone. You can delete your data at any time (Settings, "Supprimer mon compte"), by uninstalling the app and by deleting the backup folder. The app is intended for users aged 13 and over. Contact: <a href="mailto:lafaimoma@gmail.com">lafaimoma@gmail.com</a>.</p>
 </main></body>
 </html>
